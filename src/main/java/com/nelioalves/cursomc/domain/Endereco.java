@@ -1,7 +1,6 @@
 package com.nelioalves.cursomc.domain;
 
 import java.io.Serializable;
-import java.util.Optional;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -33,7 +32,7 @@ public class Endereco implements Serializable {
 
 	@ManyToOne
 	@JoinColumn(name = "cidade_id")
-	private Optional<Cidade> cidade;
+	private Cidade cidade;
 
 	public Integer getId() {
 		return id;
@@ -91,16 +90,16 @@ public class Endereco implements Serializable {
 		this.cliente = cliente;
 	}
 
-	public Optional<Cidade> getCidade() {
+	public Cidade getCidade() {
 		return cidade;
 	}
 
-	public void setCidade(Optional<Cidade> cidade) {
+	public void setCidade(Cidade cidade) {
 		this.cidade = cidade;
 	}
 
 	public Endereco(Integer id, String logradouro, String numero, String complemento, String bairro, String cep,
-			Cliente cliente, Optional<Cidade> cid) {
+			Cliente cliente, Cidade cid) {
 		super();
 		this.id = id;
 		this.logradouro = logradouro;
