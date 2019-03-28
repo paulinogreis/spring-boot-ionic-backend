@@ -52,6 +52,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-mail</artifactId>
 		</dependency>
+<<<<<<< HEAD
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -64,6 +65,12 @@
 			<version>0.7.0</version>
 		</dependency>
 				
+=======
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+>>>>>>> fba3d15ba590726556a548c5a04e194a8442a046
 	</dependencies>
 
 	<build>
